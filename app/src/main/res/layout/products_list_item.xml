@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
     android:background="@drawable/product_background"
     android:padding="20dp">
 
     <ImageView
         android:id="@+id/productImage"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -31,19 +33,44 @@
         tools:text="Creme corporal" />
 
     <TextView
-        android:id="@+id/priceProduct"
-        android:layout_width="match_parent"
+        android:id="@+id/initialPrice"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="20dp"
         android:ellipsize="end"
+        android:gravity="start"
+        android:alpha="0.5"
         android:maxLines="1"
-        android:textColor="@color/pink"
         android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleProduct"
         tools:text="R$ 29,90" />
+
+    <TextView
+        android:id="@+id/priceProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:maxLines="1"
+        android:layout_marginStart="12dp"
+        android:textColor="@color/pink"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/initialPrice"
+        app:layout_constraintTop_toTopOf="@+id/initialPrice"
+        tools:text="R$ 29,90" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonGetPromotion"
+        style="@android:style/ButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/pink"
+        android:text="@string/get_promotion"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceProduct" />
 </androidx.constraintlayout.widget.ConstraintLayout>
