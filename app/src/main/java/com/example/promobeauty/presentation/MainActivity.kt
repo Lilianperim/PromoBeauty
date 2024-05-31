@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         viewModel.errorMessage.observe(this) { message ->
-            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Por favor, colocar a API_KEY enviada", Toast.LENGTH_SHORT).show()
         }
     }
 
