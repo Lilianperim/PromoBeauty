@@ -1,3 +1,5 @@
 # PromoBeauty
 
-[app_promo_beauty.mp4](..%2F..%2F..%2F..%2FDownloads%2Fapp_promo_beauty.mp4)
+Vídeo de demonstração:
+
+[app_promo_beauty.mp4](assets%2Fapp_promo_beauty.mp4)
