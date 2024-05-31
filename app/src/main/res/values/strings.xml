@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">PromoBeauty</string>
+    <string name="get_promotion">Pegar promoção</string>
+    <string-array name="category">
+        <item>perfumes</item>
+        <item>bolsas</item>
+        <item>maquiagens</item>
+        <item>skincare</item>
+    </string-array>
 </resources>
